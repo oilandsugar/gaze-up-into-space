@@ -1,9 +1,7 @@
-/**
- * @author Kate
- */
+// feel free to add other quote structures and words
 
 var grammars = {
- 
+
     universe : {
 
         planet : ["Mercury", "Venus", "Earth", "Mars", "Ceres", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto", "Haumea", "Makemake", "Eris"],
@@ -17,7 +15,7 @@ var grammars = {
 
         verbhumanity : ["are reaching", "stare at", "gaze at", "read the story of", "think", "see", "understand", "contemplate"],
         verbwe : ["are staring at", "reach", "stare at", "gaze at", "read", "think of", "see the", "understand the", "contemplate the"],
-        
+
         human : ["we", "the human race", "humanity"],
         concept : ["time", "distance", "mass", "energy", "gravity", "light", "the spacial fabric", "space and time", "singularity", "an anomaly of gravity", "matter", "dark matter"],
         number : ["400 billions", "billions and billions", "millions"],
@@ -27,7 +25,7 @@ var grammars = {
 
         origin : ["The #universe# is made of #adjectiveGen# #particle# and we #verbwe# the #adverb# of it."]
     },
-  
+
     cosmos : {
 
           planet : ["Mercury", "Venus", "Earth", "Mars", "Ceres", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto", "Haumea", "Makemake", "Eris"],
@@ -51,7 +49,7 @@ var grammars = {
 
           origin : ["#human# are made of #adjectiveGen# #particle# and we #verbwe# the #adverb# of it."]
       }
-  
+
   // TODO: create variations of the generative structure, they will have different lengths in characters, somme shareable, some twittable //
 
 }

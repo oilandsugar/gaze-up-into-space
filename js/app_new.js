@@ -1,5 +1,4 @@
 function loadGrammar(name) {
-	// TODO: select grammar name randomly inside function //
 	var grammar = tracery.createGrammar(grammars[name]);
 	var s = grammar.flatten("#origin#");
 	var div = $("<div/>", {
@@ -30,32 +29,32 @@ function loadGrammar(name) {
 			$('#social').fadeIn(500);
 		});
 	});
-
-	// TODO: animate stars on quote generation //
 }
 
 $(document).ready(function() {
-	
+	// random galaxy backgrounds, on page load
 	var rand = Math.floor((Math.random() * 10) + 1);
 	if(rand < 4) {
 		$('<img/>').attr('src', 'http://www.gazeupinto.space/img/1.jpg').load(function() {
-			$(this).remove(); 
+			$(this).remove();
 			$('#galaxy').css('background-image', 'url(http://www.gazeupinto.space/img/1.jpg)').animate({opacity: 0.3}, 1000);
 		});
 	} else if(rand > 7) {
 		$('<img/>').attr('src', 'http://www.gazeupinto.space/img/2.jpg').load(function() {
-			$(this).remove(); 
+			$(this).remove();
 			$('#galaxy').css('background-image', 'url(http://www.gazeupinto.space/img/2.jpg)').animate({opacity: 0.3}, 1000);
 		});
 	} else {
 		$('<img/>').attr('src', 'http://www.gazeupinto.space/img/3.jpg').load(function() {
-			$(this).remove(); 
+			$(this).remove();
 			$('#galaxy').css('background-image', 'url(http://www.gazeupinto.space/img/3.jpg)').animate({opacity: 0.3}, 1000);
 		});
 	}
-		
+	// load quote after background
 	setTimeout(function() {
-		loadGrammar("universe");
+		var grammarNames = ["universe", "cosmos"];
+		var randomGrammar = grammarNames[Math.floor(Math.random()*grammarNames.length)];
+		loadGrammar(randomGrammar);
 		$('#buttons').delay(1000).fadeIn(500);
 	}, 0);
 
