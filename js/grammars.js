@@ -23,10 +23,14 @@ var grammars = {
 
           humanSingular : ["The human race", "Humanity"],
           humanPlural : ["We", "Humans", "Human beings", "All living things"],
+          adjectiveGen : ["exalted", "awesome", "enduring", "wonderful", "darker", "alien", "swirling", "glorious", "remarklable", "marvellous", "intricate", "beautiful"],
+          particle : ["atoms", "quarks", "higgs bosons", "particles", "molecules", "sub-atomic particles", "star dust", "elements", "cells"],
+          verbwe : ["are staring at", "reach", "stare at", "gaze at", "read", "think of", "see the", "understand the", "contemplate the"],
+          adverb : ["beauty", "power", "majesty", "immensity", "vastness"],
+
           concept : ["time", "distance", "mass", "energy", "gravity", "light", "the spacial fabric", "space and time", "singularity", "an anomaly of gravity", "matter", "dark matter"],
           number : ["400 billions", "billions and billions", "millions"],
           poetry: ["the poetry of", "the history of"],
-          adverb : ["beauty", "power", "majesty", "immensity", "vastness"],
           rules : ["the laws of physics", "rules", "the laws of nature"],
 
           origin : ["#humanPlural# are made of #adjectiveGen# #particle# and we #verbwe# the #adverb# of it."]
