@@ -31,6 +31,12 @@ function loadGrammar(name) {
 	});
 }
 
+function loadRandomGrammar() {
+	var grammarNames = ["universe", "cosmos"];
+	var randomGrammar = grammarNames[Math.floor(Math.random()*grammarNames.length)];
+	loadGrammar(randomGrammar);
+}
+
 $(document).ready(function() {
 	// random galaxy backgrounds, on page load
 	var rand = Math.floor((Math.random() * 10) + 1);
@@ -52,9 +58,7 @@ $(document).ready(function() {
 	}
 	// load quote after background
 	setTimeout(function() {
-		var grammarNames = ["universe", "cosmos"];
-		var randomGrammar = grammarNames[Math.floor(Math.random()*grammarNames.length)];
-		loadGrammar(randomGrammar);
+		loadRandomGrammar();
 		$('#buttons').delay(1000).fadeIn(500);
 	}, 0);
 
