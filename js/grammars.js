@@ -8,6 +8,7 @@ var grammars = {
         stellarObject : ["comet", "planet", "star", "world"],
         universe : ["cosmos", "universe", "observable universe", "milky way", "galaxy", "milky way galaxy", "solar system", "night sky", "interstellar space"],
         particle : ["atoms", "quarks", "higgs bosons", "particles", "molecules", "sub-atomic particles", "star dust", "elements", "cells"],
+        adverb : ["beauty", "power", "majesty", "immensity", "vastness"],
 
         adjectiveSmall : ["small",  "tiny"],
         adjectiveBig : ["immense", "enormous", "vast", "big"],
@@ -25,8 +26,8 @@ var grammars = {
           humanPlural : ["We", "Humans", "Human beings", "All living things"],
           adjectiveGen : ["exalted", "awesome", "enduring", "wonderful", "darker", "alien", "swirling", "glorious", "remarklable", "marvellous", "intricate", "beautiful"],
           particle : ["atoms", "quarks", "higgs bosons", "particles", "molecules", "sub-atomic particles", "star dust", "elements", "cells"],
-          verbwe : ["are staring at", "reach", "stare at", "gaze at", "read", "think of", "see the", "understand the", "contemplate the"],
-          adverb : ["beauty", "power", "majesty", "immensity", "vastness"],
+          verbwe : ["are staring at", "reach", "stare at", "gaze at", "read", "think of", "see the", "understand the", "contemplate the", "can be amazed about"],
+          adverb : ["beauty", "power", "majesty", "immensity", "vastness", "awesomeness"],
 
           concept : ["time", "distance", "mass", "energy", "gravity", "light", "the spacial fabric", "space and time", "singularity", "an anomaly of gravity", "matter", "dark matter"],
           number : ["400 billions", "billions and billions", "millions"],
